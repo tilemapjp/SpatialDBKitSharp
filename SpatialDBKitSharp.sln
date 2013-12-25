@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpatialDBKit", "SpatialDBKit\SpatialDBKit\SpatialDBKit.csproj", "{9034C2CB-4FF4-4152-8BDF-A4890DB427B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpatialDBKitTest", "SpatialDBKitTest\SpatialDBKitTest.csproj", "{F4B1EA86-43E3-42DE-ABD5-D29A8D7E36F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9034C2CB-4FF4-4152-8BDF-A4890DB427B8}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{9034C2CB-4FF4-4152-8BDF-A4890DB427B8}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{9034C2CB-4FF4-4152-8BDF-A4890DB427B8}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{9034C2CB-4FF4-4152-8BDF-A4890DB427B8}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{9034C2CB-4FF4-4152-8BDF-A4890DB427B8}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{9034C2CB-4FF4-4152-8BDF-A4890DB427B8}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{9034C2CB-4FF4-4152-8BDF-A4890DB427B8}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{9034C2CB-4FF4-4152-8BDF-A4890DB427B8}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{9034C2CB-4FF4-4152-8BDF-A4890DB427B8}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{9034C2CB-4FF4-4152-8BDF-A4890DB427B8}.Release|iPhone.Build.0 = Release|Any CPU
+		{9034C2CB-4FF4-4152-8BDF-A4890DB427B8}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{9034C2CB-4FF4-4152-8BDF-A4890DB427B8}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{F4B1EA86-43E3-42DE-ABD5-D29A8D7E36F4}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{F4B1EA86-43E3-42DE-ABD5-D29A8D7E36F4}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{F4B1EA86-43E3-42DE-ABD5-D29A8D7E36F4}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{F4B1EA86-43E3-42DE-ABD5-D29A8D7E36F4}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{F4B1EA86-43E3-42DE-ABD5-D29A8D7E36F4}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{F4B1EA86-43E3-42DE-ABD5-D29A8D7E36F4}.Debug|iPhone.Build.0 = Debug|iPhone
+		{F4B1EA86-43E3-42DE-ABD5-D29A8D7E36F4}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{F4B1EA86-43E3-42DE-ABD5-D29A8D7E36F4}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{F4B1EA86-43E3-42DE-ABD5-D29A8D7E36F4}.Release|iPhone.ActiveCfg = Release|iPhone
+		{F4B1EA86-43E3-42DE-ABD5-D29A8D7E36F4}.Release|iPhone.Build.0 = Release|iPhone
+		{F4B1EA86-43E3-42DE-ABD5-D29A8D7E36F4}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{F4B1EA86-43E3-42DE-ABD5-D29A8D7E36F4}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = SpatialDBKit\SpatialDBKit\SpatialDBKit.csproj
+	EndGlobalSection
+EndGlobal
