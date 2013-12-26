@@ -1,7 +1,7 @@
 SpatialDBKitSharp
 =================
 
-This project is Xamarin.iOS port of SpatialDBKit ( https://github.com/andreacremaschi/SpatialDBKit ).   
+This project is Xamarin.iOS port of [SpatialDBKit](https://github.com/andreacremaschi/SpatialDBKit).   
 This repository is public but maintainer is very newbie of Xamarin binding, so just experimental.  
 Cause of short knowledge about Marshal Class, there are many interfaces exposured as IntPtr.  
 Patches, pull requests, tests are very welcome.  
@@ -13,7 +13,7 @@ The project manages a whole stack of technologies that allow combined together t
 
 ## Notice ##
 
-static library file SpatialDBKit/SpatialDBKit/libSpatialiteFMDB.a is too big to commit in github, so it was compressed as patialDBKit/SpatialDBKit/libSpatialiteFMDB.a.zip.  
+static library file SpatialDBKit/SpatialDBKit/libSpatialiteFMDB.a is too big to commit in github, so it was compressed as SpatialDBKit/SpatialDBKit/libSpatialiteFMDB.a.zip.  
 You must unzip it before trying to use this repository.
 
 ## Features ##
@@ -22,39 +22,38 @@ With SpatialDBKit you will be able to:
 
 * Open a spatialite database:
 
-```Objective-C
+```cs
     // Open a spatialite database
-    SpatialDatabase *db = [SpatialDatabase databaseWithPath: [[NSBundle mainBundle] pathForResource:@"test" ofType:@"sqlite"]];
-    [db open];
+    var db = new SpatialDatabase (NSBundle.MainBundle.PathForResource ("test", "sqlite"));
+    db.Open ();
 ```
 
 * fetch geometries in form of Shapekit objects:
 
-```Objective-C    
-    FMResultSet *rs = [db executeQuery:@"select Name, geometry FROM Regions"];
-        while ([rs next]) {
-        NSLog(@"%@", [resultSet resultDictionary]);
+```cs    
+    var rs = db.ExecuteQuery ("select Name, geometry FROM Regions");
+    while (rs.Next) {
+        Console.WriteLine ("{0}", rs.ResultDict);
     }
 ```    
     
 * or in textual form:
 
-```Objective-C    
-    FMResultSet *rs = [db executeQuery:@"select Name, AsText(geometry) as geom_text FROM Regions"];
+```cs  
+    var rs = db.ExecuteQuery ("select Name, AsText(geometry) as geom_text FROM Regions");
 ```
 
 * calculating distance from a point if you need to:
 
-```Objective-C    
-    FMResultSet *rs = [db executeQuery:@"select distance(geometry, MakePoint(45.694216,9.676909,4326)) AS text FROM Regions"];
+```cs   
+    var rs = db.ExecuteQuery ("select distance(geometry, MakePoint(45.694216,9.676909,4326)) AS text FROM Regions");
 ```
 
 * or filtering points by distance:
 
-```Objective-C    
-    FMResultSet *resultSet= [db executeQuery:@"SELECT astext(geometry) as geometry, distance(geometry, MakePoint(45.694216,9.676909,4326)) as geometry, Name FROM Towns where distance(geometry, MakePoint(45.694216,9.676909,4326)) < 5000"];
+```cs   
+    var rs = db.ExecuteQuery ("SELECT astext(geometry) as geometry, distance(geometry, MakePoint(45.694216,9.676909,4326)) as geometry, Name FROM Towns where distance(geometry, MakePoint(45.694216,9.676909,4326)) < 5000");
 ```
-
 
 This is just the point of the iceberg.. check [spatialite SQL functions reference list](http://www.gaia-gis.it/gaia-sins/spatialite-sql-4.1.0.html) to be sure you don't miss anything of this awesome library!
 
