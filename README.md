@@ -88,7 +88,8 @@ Since SpatialDBKit actually sits on a stack of technology, you should refer to t
  * [ShapeKit](https://github.com/andreacremaschi/ShapeKit), being a GEOS wrapper, is under the terms of GNU Lesser General Public License.
 
  * [spatialite](https://www.gaia-gis.it/fossil/libspatialite/index) is developed and maintained by Alessandro Furieri  and are licensed under the [MPL tri-license](http://www.mozilla.org/MPL/boilerplate-1.1/mpl-tri-license-html) terms.
- * SpatialDBKit itself is licensed under the same MPL tri-license terms.
+ * [SpatialDBKit](https://github.com/andreacremaschi/SpatialDBKit) is licensed under the same MPL tri-license terms.
+ * SpatialDBKitSharp is same, too.
 
  * [SQLite](http://www.sqlite.org/copyright.html) has been dedicated to the public domain by the authors (thanks!).
  * Its Objective-C wrapper, [FMDB](https://github.com/ccgus/fmdb) by Gus Mueller, is under the MIT License.
