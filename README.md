@@ -1,7 +1,7 @@
 SpatialDBKitSharp
 =================
 
-This project is Xamarin.iOS port of [SpatialDBKit](https://github.com/andreacremaschi/SpatialDBKit).   
+This project is Xamarin.iOS port of [SpatialDBKit](https://github.com/andreacremaschi/SpatialDBKit).  
 This repository is public but maintainer is very newbie of Xamarin binding, so just experimental.  
 Cause of short knowledge about Marshal Class, there are many interfaces exposured as IntPtr.  
 Patches, pull requests, tests are very welcome.  
